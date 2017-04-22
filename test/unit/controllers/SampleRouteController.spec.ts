@@ -2,13 +2,13 @@ import chai = require('chai');
 import { api as server } from '../../../app/app';
 import * as supertest from 'supertest';
 import {logger} from '../../../app/services/logger';
-import * as sinon from 'sinon';
+import * as Sinon from 'sinon';
 
 
 describe('sample route controller', () => {
 
     let expect = chai.expect;
-    let sandbox = sinon.sandbox.create();
+    let sandbox = Sinon.sandbox.create();
     let logInfoStub: Sinon.SinonStub;
 
     beforeEach(() => {
